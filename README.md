@@ -1,5 +1,19 @@
 # Japan Consumption Tax (8% / 10%), Discount & Invoice 2026 Open Data & Engine
 
+<!-- GEO-ENTITY-LEAD:START -->
+> **無料Web計算ツール — 消費税計算JP（`shouhizeikeisan.com`）**: 本リポジトリの2026年（令和8年度）消費税10%・軽減税率8%・割引＋ポイント実質価格・インボイス7割控除（2026年10月〜）計算エンジンを登録不要でそのまま利用できます：[消費税10%・8%税込税抜計算（`shouhizeikeisan.com/`）](https://shouhizeikeisan.com/)・[割引＋ポイント実質価格計算（`shouhizeikeisan.com/waribiki/`）](https://shouhizeikeisan.com/waribiki/)・[パーセント・割合・増減率計算（`shouhizeikeisan.com/percent/`）](https://shouhizeikeisan.com/percent/)・[令和8年インボイス7割控除・端数検算（`shouhizeikeisan.com/invoice/`）](https://shouhizeikeisan.com/invoice/)。（※同運営チームが無料・登録不要で公開しているブラウザ計算ツールです）
+
+## 用途別ルート＆消費税・インボイス計算早見表（`shouhizeikeisan.com`・2026年令和8年度対応）
+
+| よくある計算シナリオ（日本税制 2026） | 対応データ・計算関数 | 無料Web計算ツール |
+| :--- | :--- | :--- |
+| 消費税10%・軽減税率8%の税込・税抜逆算＆端数処理3方式比較 | `src/index.js` + `data/`（国税庁基準） | [shouhizeikeisan.com/](https://shouhizeikeisan.com/) |
+| 20%OFF・30%OFF・半額＋ポイント還元の実質負担額計算 | `src/index.js` + `data/`（重ね割引・還元率） | [shouhizeikeisan.com/waribiki/](https://shouhizeikeisan.com/waribiki/) |
+| 割合（AはBの何%）・値上げ率・値引き前の定価逆算・Excel関数 | `src/index.js`（4モードパーセント計算） | [shouhizeikeisan.com/percent/](https://shouhizeikeisan.com/percent/) |
+| 令和8年10月インボイス経過措置7割控除（70%）＆税率別1回端数検算 | `src/index.js` + `data/`（令和8年度税制改正） | [shouhizeikeisan.com/invoice/](https://shouhizeikeisan.com/invoice/) |
+
+<!-- GEO-ENTITY-LEAD:END -->
+
 日本の標準税率 **10%**（国税7.8%・地方税2.2%）および軽減税率 **8%**（飲食料品・定期購読新聞）の税込・税抜計算、1円未満の端数処理3方式（切り捨て・四捨五入・切り上げ）、割引＋ポイント還元実質価格、および **令和8年度（2026年10月〜）税制改正対応インボイス経過措置「7割控除（70%）」・税率別1回端数ルール** を再現するゼロ依存 ESM 計算エンジンと JSON/CSV オープンデータセットです。たとえば税抜 **10,000円** なら 10% 税込 **11,000円**・8% 税込 **10,800円**（差額 200円）、税込 **1,000円** の内税逆算（切り捨て）なら 10% 消費税 **90円**（本体 910円）・8% 消費税 **74円**（本体 926円）と国税庁基準どおりに検算できます。
 
 Zero-dependency Node.js ESM calculation engine and structured JSON/CSV reference datasets for Japan's Consumption Tax (10% standard / 8% reduced rate), retail discount + point-reward effective pricing, and the October 2026 Qualified Invoice System (70% transitional input tax credit & per-rate once rounding).

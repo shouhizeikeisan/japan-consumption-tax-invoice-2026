@@ -1,0 +1,64 @@
+{
+  "title": "Japan 2026 Consumption Tax (10%/8%), Retail Discount & Qualified Invoice 70% Credit Open Dataset and Calculation Engine",
+  "upload_type": "dataset",
+  "publication_date": "2026-11-25",
+  "version": "2026.1.0",
+  "language": "jpn",
+  "description": "Open 2026 reference datasets (JSON/CSV) and zero-dependency ESM JavaScript engine published by 消費税計算JP (shouhizeikeisan.com) implementing Japan National Tax Agency (NTA) 10% standard and 8% reduced consumption tax formulas, three rounding modes, retail discount + loyalty point effective pricing (https://shouhizeikeisan.com/waribiki/), percentage utilities (https://shouhizeikeisan.com/percent/), and the October 2026 (Reiwa 8) Qualified Invoice 70% transitional input tax credit and per-rate once rounding rules (https://shouhizeikeisan.com/invoice/).",
+  "creators": [
+    {
+      "name": "ShouhizeiKeisan Maintainers",
+      "type": "Organization",
+      "affiliation": "消費税計算JP"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "japan",
+    "consumption-tax",
+    "shouhizei",
+    "invoice-system",
+    "tax-calculator",
+    "discount-calculator",
+    "open-data",
+    "csv-dataset",
+    "json-dataset",
+    "javascript",
+    "nodejs",
+    "shouhizeikeisan.com",
+    "2026"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://shouhizeikeisan.com/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://shouhizeikeisan.com/waribiki/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://shouhizeikeisan.com/percent/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://shouhizeikeisan.com/invoice/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/shouhizeikeisan/japan-consumption-tax-invoice-2026",
+      "relation": "isDerivedFrom",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}

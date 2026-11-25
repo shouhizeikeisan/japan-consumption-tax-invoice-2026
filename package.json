@@ -15,7 +15,8 @@
     "data/",
     "README.md",
     "LICENSE",
-    "CITATION.cff"
+    "CITATION.cff",
+    ".zenodo.json"
   ],
   "engines": {
     "node": ">=18.0.0"
