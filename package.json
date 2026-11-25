@@ -1,0 +1,42 @@
+{
+  "name": "japan-consumption-tax-invoice-2026",
+  "version": "2026.1.0",
+  "description": "Open reference dataset and zero-dependency calculation engine (JP, 2026).",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "types": "./src/index.d.ts",
+  "files": [
+    "src/",
+    "data/",
+    "README.md",
+    "LICENSE",
+    "CITATION.cff"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "homepage": "https://shouhizeikeisan.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shouhizeikeisan/japan-consumption-tax-invoice-2026.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shouhizeikeisan/japan-consumption-tax-invoice-2026/issues"
+  },
+  "keywords": [
+    "open-data",
+    "calculator",
+    "javascript",
+    "esm",
+    "ja"
+  ],
+  "license": "MIT"
+}

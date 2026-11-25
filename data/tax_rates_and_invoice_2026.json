@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-11-25",
+  "jurisdiction": "JP",
+  "currency": "JPY",
+  "reference_calculator": "https://shouhizeikeisan.com",
+  "tax_reform_basis": "令和8年度（2026年度）税制改正・国税庁公表基準",
+  "sources": [
+    {
+      "name": "国税庁 No.6303 消費税および地方消費税の税率",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6303.htm"
+    },
+    {
+      "name": "国税庁 No.6371 端数処理の計算",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6371.htm"
+    },
+    {
+      "name": "国税庁 消費税の軽減税率制度について",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/index.htm"
+    },
+    {
+      "name": "国税庁 インボイス制度特設サイト",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/invoice.htm"
+    }
+  ],
+  "rates": [
+    {
+      "code": "standard",
+      "label_ja": "標準税率",
+      "label_en": "Standard Consumption Tax Rate",
+      "total_percent": 10.0,
+      "national_tax_percent": 7.8,
+      "local_tax_percent": 2.2,
+      "applicable_items_ja": "一般商品・サービス・外食（店内飲食・イートイン）・酒類・医薬品等"
+    },
+    {
+      "code": "reduced",
+      "label_ja": "軽減税率",
+      "label_en": "Reduced Consumption Tax Rate",
+      "total_percent": 8.0,
+      "national_tax_percent": 6.24,
+      "local_tax_percent": 1.76,
+      "applicable_items_ja": "酒類・外食を除く飲食料品（テイクアウト・宅配含む）および定期購読新聞（週2回以上発行）"
+    }
+  ],
+  "rounding_rules": {
+    "allowed_modes": ["floor", "round", "ceil"],
+    "business_discretion": true,
+    "invoice_rule_ja": "一の適格請求書（インボイス）につき、税率ごとに1回のみ端数処理を行う（商品明細ごとの端数処理合算は不可）",
+    "invoice_rule_en": "Under Japan's Qualified Invoice System, rounding may be performed only once per tax rate per invoice."
+  },
+  "invoice_transitional_measures": [
+    {
+      "phase": "phase_1_ended",
+      "period_start": "2023-10-01",
+      "period_end": "2026-09-30",
+      "deductible_ratio": 0.8,
+      "label_ja": "8割控除（80%）— 終了",
+      "annual_cap_per_supplier_jpy": null
+    },
+    {
+      "phase": "phase_2_active_2026",
+      "period_start": "2026-10-01",
+      "period_end": "2028-09-30",
+      "deductible_ratio": 0.7,
+      "label_ja": "7割控除（70%）— 令和8年度改正により50%予定から緩和",
+      "annual_cap_per_supplier_jpy": 100000000
+    },
+    {
+      "phase": "phase_3_scheduled",
+      "period_start": "2028-10-01",
+      "period_end": "2031-09-30",
+      "deductible_ratio": 0.5,
+      "label_ja": "5割→3割控除へ段階的縮減（2031年9月末まで2年間延長）",
+      "annual_cap_per_supplier_jpy": 100000000
+    }
+  ],
+  "special_small_business_measures": {
+    "two_tenths_rule_20pct": {
+      "label_ja": "2割特例（売上税額の2割納税）",
+      "sole_proprietor_final_tax_year": 2026
+    },
+    "three_tenths_rule_30pct": {
+      "label_ja": "3割特例（個人事業者向け新設・売上税額の3割納税）",
+      "applicable_tax_years": [2027, 2028]
+    }
+  }
+}

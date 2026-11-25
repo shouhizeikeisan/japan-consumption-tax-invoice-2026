@@ -1,0 +1,6 @@
+scheme,period_start,period_end,rate_or_rule,annual_cap_jpy,status_as_of_2026_11,notes_ja
+exempt_supplier_purchase_deduction,2023-10-01,2026-09-30,80%,none,ended,旧8割控除期間（2026年9月末終了）
+exempt_supplier_purchase_deduction,2026-10-01,2028-09-30,70%,100000000,active,令和8年度税制改正により当初50%予定から7割控除へ緩和・同一免税事業者年間1億円上限新設
+exempt_supplier_purchase_deduction,2028-10-01,2031-09-30,50%-30%,100000000,scheduled,段階的縮減（2031年9月末まで延長）
+small_business_20pct_special_rule,2023-10-01,2026-12-31,20%_of_sales_tax,none,ending_fy2026,個人事業者の2割特例は令和8年分（2026年分）申告で終了
+sole_proprietor_30pct_special_rule,2027-01-01,2028-12-31,30%_of_sales_tax,none,scheduled,個人事業者向け激変緩和措置として令和9・10年分に新設
